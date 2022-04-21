@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('/fonts/disposabledroid-bb.regular.ttf');
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: myFirstFont;
+}
+header, footer{
+    background-color: azure;
+    color: midnightblue;
+}
+header,footer,main{
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
