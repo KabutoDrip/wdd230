@@ -1,19 +1,218 @@
+/*clip path, replaces border radius for pixelated stylization https://lukeb.co.uk/blog/2022/01/17/pixelated-rounded-corners-with-css-clip-path/*/
+/*color palatte: https://lospec.com/palette-list/natures-embrace-55 */
+/*clip paths cant have borders applied: here is a solution i found: https://sandeshsardardotcom.wordpress.com/2018/09/09/how-to-add-border-in-clip-path-css/*/
+
+
+
+
 
 @font-face {
     font-family: myFirstFont;
     src: url('/fonts/disposabledroid-bb.regular.ttf');
-  }
-  *{
+}
+body{
+    background-color: #ccc1be;
+}
+
+*{
     padding: 0;
     margin: 0;
     font-family: myFirstFont;
 }
+h1{
+    float: right;
+}
 header, footer{
-    background-color: azure;
-    color: midnightblue;
+    background-color: #1b4e44;
+    color: #fdf5f1;
+    height: 160px;
+    text-shadow: 3px 2px #1b141e;
+    clip-path: polygon(
+    0px 20px,
+    4px 20px,
+    4px 12px,
+    8px 12px,
+    8px 8px,
+    12px 8px,
+    12px 4px,
+    16px 4px,
+    20px 4px,
+    20px 0px,
+    calc(100% - 20px) 0px,
+    calc(100% - 20px) 4px,
+    calc(100% - 12px) 4px,
+    calc(100% - 12px) 8px,
+    calc(100% - 8px) 8px,
+    calc(100% - 8px) 12px,
+    calc(100% - 4px) 12px,
+    calc(100% - 4px) 16px,
+    calc(100% - 4px) 20px,
+    100% 20px,
+    100% calc(100% - 20px),
+    calc(100% - 4px) calc(100% - 20px),
+    calc(100% - 4px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 4px),
+    calc(100% - 16px) calc(100% - 4px),
+    calc(100% - 20px) calc(100% - 4px),
+    calc(100% - 20px) 100%,
+    20px 100%,
+    20px calc(100% - 4px),
+    12px calc(100% - 4px),
+    12px calc(100% - 8px),
+    8px calc(100% - 8px),
+    8px calc(100% - 12px),
+    4px calc(100% - 12px),
+    4px calc(100% - 16px),
+    4px calc(100% - 20px),
+    0px calc(100% - 20px)
+  );
 }
 header,footer,main{
+    display: grid;
     max-width: 36rem;
     margin: 0 auto;
     padding: 2rem;
 }
+header{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+h1{
+    grid-column: 2/4;
+    grid-row: 2;
+    text-align: center;
+    font-size: 50px;
+}
+img {
+    position: absolute;
+    width: 128px; 
+    height: auto;
+    background-color:#617b47;
+    clip-path: polygon(
+    0px 20px,
+    4px 20px,
+    4px 12px,
+    8px 12px,
+    8px 8px,
+    12px 8px,
+    12px 4px,
+    16px 4px,
+    20px 4px,
+    20px 0px,
+    calc(100% - 20px) 0px,
+    calc(100% - 20px) 4px,
+    calc(100% - 12px) 4px,
+    calc(100% - 12px) 8px,
+    calc(100% - 8px) 8px,
+    calc(100% - 8px) 12px,
+    calc(100% - 4px) 12px,
+    calc(100% - 4px) 16px,
+    calc(100% - 4px) 20px,
+    100% 20px,
+    100% calc(100% - 20px),
+    calc(100% - 4px) calc(100% - 20px),
+    calc(100% - 4px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 4px),
+    calc(100% - 16px) calc(100% - 4px),
+    calc(100% - 20px) calc(100% - 4px),
+    calc(100% - 20px) 100%,
+    20px 100%,
+    20px calc(100% - 4px),
+    12px calc(100% - 4px),
+    12px calc(100% - 8px),
+    8px calc(100% - 8px),
+    8px calc(100% - 12px),
+    4px calc(100% - 12px),
+    4px calc(100% - 16px),
+    4px calc(100% - 20px),
+    0px calc(100% - 20px)
+  );
+}
+main{
+    font-size: 30px;
+}
+.pfp{
+  z-index: 3;
+  margin: 10px;
+}
+.transparent{
+    z-index: 1;
+    width: 150px; 
+    height: auto;
+    background-color:#1b141e;
+    clip-path: polygon(
+    0px 20px,
+    4px 20px,
+    4px 12px,
+    8px 12px,
+    8px 8px,
+    12px 8px,
+    12px 4px,
+    16px 4px,
+    20px 4px,
+    20px 0px,
+    calc(100% - 20px) 0px,
+    calc(100% - 20px) 4px,
+    calc(100% - 12px) 4px,
+    calc(100% - 12px) 8px,
+    calc(100% - 8px) 8px,
+    calc(100% - 8px) 12px,
+    calc(100% - 4px) 12px,
+    calc(100% - 4px) 16px,
+    calc(100% - 4px) 20px,
+    100% 20px,
+    100% calc(100% - 20px),
+    calc(100% - 4px) calc(100% - 20px),
+    calc(100% - 4px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 4px),
+    calc(100% - 16px) calc(100% - 4px),
+    calc(100% - 20px) calc(100% - 4px),
+    calc(100% - 20px) 100%,
+    20px 100%,
+    20px calc(100% - 4px),
+    12px calc(100% - 4px),
+    12px calc(100% - 8px),
+    8px calc(100% - 8px),
+    8px calc(100% - 12px),
+    4px calc(100% - 12px),
+    4px calc(100% - 16px),
+    4px calc(100% - 20px),
+    0px calc(100% - 20px)
+
+    )}
+
+    footer{
+        text-align: center;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1.5fr 1fr;
+    }
+    .copyright{
+        
+        text-align: right;
+    }
+
+    .state{
+        text-align: left;
+    }
+    .copyright, .name, .state{
+        padding-bottom: 20px;
+        align-self: end;
+        font-size: 30px;
+    }
+
+    .lastmodified{
+        grid-column: 1/4;
+        text-align: center;
+        grid-row: 2;
+        font-size: 25px;
+
+    }
