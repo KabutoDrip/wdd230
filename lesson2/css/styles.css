@@ -2,11 +2,24 @@
     padding: 0;
     margin: 0;
 }
+header{
+    padding: 0;
+    margin: 0;
+
+}
+header img{
+    max-height: 200px;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
     height: 100vh;
+    display: flex;
+}
+
+.subslides{
+    height: 200vh;
     display: flex;
 }
 section{
@@ -17,14 +30,13 @@ section{
     background: red;
     flex: 1;
     transition: all 0.5s;
-    
-
 
 
 }
 section:hover{
     flex:3;
 }
+
 section h1{
     background: black;
     color: white;
@@ -35,7 +47,12 @@ section h1{
     background: url("/wdd230/lesson2/images/thelongwalk.jpg");
     background-position: center;
     background-size: cover;
+    
 
+}
+
+.container:hover + .container #thelongwalk{
+    flex: 3;
 }
 #northman{
     background: url("/wdd230/lesson2/images/northman.jpg");
@@ -48,7 +65,27 @@ section h1{
     background-position: center;
     background-size: cover;
     
+    
 }
+#movie1info{
+    background:white;
+    background-position: center;
+    background-size: cover;
+
+}
+#movie2info{
+    background:black;
+    background-position: center;
+    background-size: cover;
+    
+}
+#movie3info{
+    background:white;
+    background-position: center;
+    background-size: cover;
+    
+}
+
 /* Tablet/halfscreen  */
 @media screen and (max-width: 1023px) {
     .container{
