@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+}
+section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    flex: 1;
+    transition: all 0.5s;
+    
+
+
+
+}
+section:hover{
+    flex:3;
+}
+section h1{
+    background: black;
+    color: white;
+    padding: 12px 32px;
+}
+
+#thelongwalk{
+    background: url("/wdd230/lesson2/images/thelongwalk.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+#northman{
+    background: url("/wdd230/lesson2/images/northman.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+#ambulance{
+    background: url("/wdd230/lesson2/images/ambulance.png");
+    background-position: center;
+    background-size: cover;
+    
+}
+/* Tablet/halfscreen  */
+@media screen and (max-width: 1023px) {
+    .container{
+        display: flex;
+    }
+    
+}
+/*phone*/
+@media screen and (max-width: 768px) {
+    .container{
+        display: block;
+    }
+    
+}
