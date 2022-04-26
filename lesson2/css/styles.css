@@ -14,7 +14,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-    height: 100vh;
+    height: 80vh;
     display: flex;
 }
 
@@ -23,19 +23,26 @@ body{
     display: flex;
 }
 section{
+   height: 200%; 
+   display: flex;
+   justify-content: center;
+   flex: 1;
+   background: white;
+
+}
+.imagecard{
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     background: red;
-    flex: 1;
     transition: all 0.5s;
 
 
 }
-section:hover{
+.imagecard:hover{
     flex:3;
 }
+
 
 section h1{
     background: black;
@@ -51,9 +58,7 @@ section h1{
 
 }
 
-.container:hover + .container #thelongwalk{
-    flex: 3;
-}
+
 #northman{
     background: url("/wdd230/lesson2/images/northman.jpg");
     background-position: center;
@@ -88,15 +93,16 @@ section h1{
 
 /* Tablet/halfscreen  */
 @media screen and (max-width: 1023px) {
-    .container{
-        display: flex;
+    
+    section{
+        flex-grow: 100vw;
     }
     
 }
 /*phone*/
 @media screen and (max-width: 768px) {
-    .container{
-        display: block;
-    }
     
+    section{
+        width: 100%;
+    }
 }

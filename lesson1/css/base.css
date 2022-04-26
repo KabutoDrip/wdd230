@@ -3,15 +3,15 @@
 /*clip paths cant have borders applied: here is a solution i found: https://sandeshsardardotcom.wordpress.com/2018/09/09/how-to-add-border-in-clip-path-css/*/
 
 
-@font-face {
-    font-family: myFirstFont;
-    src: url('/wdd230/fonts/disposabledroid-bb.regular.ttf');
-}
+
+
 body{
     background-color: #ccc1be;
 }
 
 *{
+    font-family: 'Open Sans', sans-serif;
+
     padding: 0;
     margin: 0;
     font-family: myFirstFont;
