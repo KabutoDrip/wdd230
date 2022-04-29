@@ -26,7 +26,7 @@ section{
    height: 200%; 
    display: flex;
    justify-content: center;
-   flex: 1;
+   flex: 33%;
    background: white;
 
 }
@@ -40,7 +40,7 @@ section{
 
 }
 .imagecard:hover{
-    flex:3;
+    flex:50%;
 }
 
 
@@ -95,7 +95,7 @@ section h1{
 @media screen and (max-width: 1023px) {
     
     section{
-        flex-grow: 100vw;
+        flex-direction: column;
     }
     
 }
@@ -106,3 +106,6 @@ section h1{
         width: 100%;
     }
 }
+
+
+/*https://stackoverflow.com/questions/43911880/using-css-transitions-in-css-grid-layout
