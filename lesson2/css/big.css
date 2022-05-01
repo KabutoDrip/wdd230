@@ -11,14 +11,17 @@ body{
 header img{
   max-height: 200px;
 }
-h1{
+h2{
   padding-top: 2vh;
   padding-bottom: 1.5vh;
   text-align: center;
-  font-size: 25px;
+  font-size: 2em;
+}
+.link{
+  text-align: center;
 }
 a{
-  font-size: 18px;
+  font-size: 1.5em;
   text-decoration: none;
   text-decoration: underline;
   color: #687169;
@@ -44,7 +47,7 @@ p{
   .el-a {
     grid-row: 1;
     grid-column: 1;
-    background: url("/wdd230/lesson2/images/c1-overlay.png");
+    background: url("/wdd230/lesson2/images/c2-overlay-min.png");
     background-position: center;
     background-size: cover;
     
@@ -53,14 +56,14 @@ p{
   .el-b {
     grid-row: 1;
     grid-column: 2;
-    background: url("/wdd230/lesson2/images/c2-overlay.png");
+    background: url("/wdd230/lesson2/images/c3-overlay-min.png");
     background-position: center;
     background-size: cover;  }
   
   .el-c {
     grid-row: 1;
     grid-column: 3;
-    background: url("/wdd230/lesson2/images/c3-overlay.png");
+    background: url("/wdd230/lesson2/images/c1-overlay-min.png");
     background-position: center;
     background-size:cover;  }
   
