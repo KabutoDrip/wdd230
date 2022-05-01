@@ -47,7 +47,7 @@ p{
   .el-a {
     grid-row: 1;
     grid-column: 1;
-    background: url("/wdd230/lesson2/images/GoodMeats967-min.png");
+    background: url("/wdd230/lesson2/images/good_meat.webp");
     background-position: center;
     background-size: cover;
     
@@ -56,14 +56,14 @@ p{
   .el-b {
     grid-row: 1;
     grid-column: 2;
-    background: url("/wdd230/lesson2/images/senn-min.png");
+    background: url("/wdd230/lesson2/images/senn.webp");
     background-position: center;
     background-size: cover;  }
   
   .el-c {
     grid-row: 1;
     grid-column: 3;
-    background: url("/wdd230/lesson2/images/drop-min.png");
+    background: url("/wdd230/lesson2/images/drop.webp");
     background-position: center;
     background-size:cover;  }
   
