@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
     .container{
       display: grid;
-      height: 240vw;
+      height: 300vh;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
