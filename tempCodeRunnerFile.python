@@ -37,4 +37,4 @@ def mystery_2(text):
         return None
     print(stack[0]) 
 
-mystery_2("0 1 0 - -")
+mystery_2("5 0 /")
