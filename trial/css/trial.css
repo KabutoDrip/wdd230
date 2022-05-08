@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+header, footer{
+    background-color: lightblue;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+}
+.flex-nav a{
+    display: block;
+    padding: .8rem 1rem;
+    text-decoration: none;
+}
+.flex-nav a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+section{
+    padding-top: 5rem;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 300px;
+}
+@media screen and (min-width: 48rem) {
+    .flex-nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    main{
+        flex-direction: row;
+    }
+}
