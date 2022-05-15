@@ -1,0 +1,124 @@
+*{
+    font-family: 'Libre Bodoni', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bilbo', cursive;
+}
+body {
+	padding: 0;
+	margin: 0;
+    background-color: beige;
+    height: 100%;
+}
+
+header {
+	background-color: #fff;
+	padding: -10px;
+	display: flex;
+    text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 900px;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+    font-size: 1.5em;
+}
+
+.logo {
+	width: 150px;
+	height: auto;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
+}
+
+.headings h1 {
+	font-size: 1.5rem;
+}
+
+.m {
+    padding: 20px 20px 0px 15px;
+	letter-spacing: 1pt;
+	font-weight: 700;
+	font-size: 1.1rem;
+    margin-right: 20px;
+}
+footer{
+    
+    font-size: 1.5em;
+    position:absolute;
+    bottom:0;
+    right: 100px;
+    left: 100px;
+}
+#lastModified {
+	text-align: center;
+	font-size: smaller;
+}
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+
+
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 50em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+/* Larger viewports */
+@media screen and (min-width: 20em) {
+	header{
+        max-width: 100%;
+    }
+    
+}
