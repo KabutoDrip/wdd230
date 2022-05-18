@@ -1,7 +1,9 @@
 document.querySelector(
-	"#lastModified"
+	"#lastmod"
 ).textContent = `Last Modification: ${document.lastModified}`;
-
+document.querySelector(
+  "#year"
+).textContent = new Date().getFullYear();
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 

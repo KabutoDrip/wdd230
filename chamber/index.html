@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bilbo&family=Libre+Bodoni:ital@1&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Chamber Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
@@ -28,10 +30,44 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="container" id="snapper">
+            <section class="hero">
+                <img src="images/oliver-spicer-_mtHdXtS2lI-unsplash.jpg" alt="">
+            </section>
+            <section class="news">
+                <p>news</p>
+            </section>
+            <section class="join">
+                <p>join</p>
+            </section>
+            <section class="event">
+                <p>event</p>
+            </section>
+            <section class="weather">
+                <p>weather</p>
+            </section>
+            <section class="spot1">
+                <p>spot1</p>
+            </section>
+            <section class="spot2">
+                <p>spot2</p>
+            </section>
+            <section class="spot3">
+                <p>spot3</p>
+            </section>
+        </div>
+
+
+    </main>
     <footer>
-        <div id="lastModified">lastModified</div>
-    </footer>
+        <div class="copyright">&copy;<span id="year"></span></div>
+        <div class="name">Camden Miller</div>
+        <img src="images/logo.svg" alt="logo">
+        <div class="state">Idaho</div>
+        <div class="lastmodified">Last modified: <span id="lastmod"></span></div> 
+       </footer>
+
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 </html>
