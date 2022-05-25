@@ -19,3 +19,17 @@ window.onresize = () => {if (window.innerWidth > 18) mainnav.classList.remove('r
 
   classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
   */
+
+  var temp = document.querySelector("#temp");
+  var wind = document.querySelector("#wind");
+  var chill = document.querySelector("#chill");
+  
+  const button = document.querySelector("#addBtn");
+  button.addEventListener("click" , () => {
+    console.log("here");
+    const a = document.querySelector("#a")
+    const b = document.querySelector("#b")
+    console.log(a+b);
+    const result = document.querySelector("#result")
+    result.textContent = (a+b)
+  })

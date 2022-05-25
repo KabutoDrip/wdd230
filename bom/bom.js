@@ -1,17 +1,11 @@
-const gra = function(min, max) {
-    return Math.random() * (max - min) + min;
-}
+var input
+var button
+var list
 
-const gri = function(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+button.addEventListener('click', function() {
+	input = document.querySelectorAll("input")})
 
-const init = function(){
-	let items = document.querySelectorAll('.gallery li');
-	for (let i = 0; i < items.length; i++){
-		items[i].style.minWidth = gra(20,20) + 'vw';
-		items[i].style.background = randomColor({luminosity: 'light'});
-	}
-	cssScrollSnapPolyfill()
-}
-init();
+var ul = document.getElementById("list");
+var li = document.createElement("li");
+li.appendChild(document.createTextNode(input));
+ul.appendChild(li);
