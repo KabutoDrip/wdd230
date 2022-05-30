@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+        header,main,footer,section{
+            border: 1px solid black;
+            min-height: 150px;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        #s4{
+            order: -2;
+        }
+        #s2{
+            order: -1;
+        }
+        #s3{
+            display: none;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .hero-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        @media screen and (min-width: 47.5rem){
+        main{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 50vh 50vh 50vh;
+            grid-template-areas: "event   hero spotlight"
+                                 "weather hero spotlight"
+                                 "join    news spotlight";
+            gap: 1rem;
+        }
+        #s1 {
+            grid-area: event;
+        }
+        #s2{
+            grid-area: weather;
+        }
+        #s3{
+            grid-area: join;
+            display: block;
+        }
+        #s4{
+            grid-area: hero;
+        }
+        #s5{
+            grid-area: news;
+        }
+        #s6{
+            grid-area: spotlight
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    <main>
+        <section id="s1">Event</section>
+        <section id="s2">Weather</section>
+        <section id="s3">Join</section>
+        <section id="s4">Hero
+            <img src="images/medium.webp" alt="ppl at desk"
+            srcset="images/largest.webp 1500w,
+            images/large.webp 1000w,
+            images/medium.webp 750w,
+            images/smol.webp 400w"
+            sizes="(max-width:47.5rem) 100vw,50vw"
+            
+            >
+        </section>
+        <section id="s5">News</section>
+        <section id="s6">Spotlight</section>
+
+    </main>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>

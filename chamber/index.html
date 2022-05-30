@@ -36,7 +36,11 @@
                 <h1>Welcome To The Shire</h1>
                 <button type="button" onclick="alert('Hello world!')">Button</button>            
 
-                <img src="images/shire.webp" alt="hobbiton">
+                <img src="images/hobbiton-medium.webp" alt="ppl at desk"
+                srcset="images/hobbiton-extralarge 2300w,
+                images/hobbiton-large.webp 1200w,
+                images/hobbiton-medium.webp 800w,
+                images/hobbiton-smol.webp 400w">
             </section>
             <section class="news">
                 <h1>News</h1>
@@ -58,11 +62,10 @@
             </section>
             <section class="weather">
                 <h1>Weather</h1>
-                <img src="images/rainy.webp" alt="rainy shire">
-                <input type="text" name="a" id="a">
-                <input type="text" name="b" id="b">
-                <button id="addBtn">Add</button>
-                <p id="result">hello</p>
+                <h1 class="city">name</h1>
+                <p class="wspeed">wind</p>
+                <p class="temperature">temp</p>
+
             </section>
             <section class="spot1">
                 <h1>NEW! Fogies Fireworks</h1>
@@ -92,5 +95,7 @@
        </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
