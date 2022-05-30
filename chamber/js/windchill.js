@@ -1,6 +1,5 @@
 var temp = document.querySelector(".temperature");
-var wind = document.querySelector("#wind");
-var chill = document.querySelector("#chill");
-
-chill = 35.74 + (.6215 * temp) - (35.75 * (wspeed**16))
-console.log(chill)
+var wispeed = document.querySelector(".wspeed");
+var chill = document.querySelector(".chill");
+var calcchill = (35.74 + (.6215 * temp) - (35.75 * (wispeed**16)));
+chill.innerHTML = calcchill;
