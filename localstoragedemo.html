@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Demo</title>
+</head>
+<body>
+    <p>Your last visit to this page was on <span id="last-visit">1/1/2022</span></p>
+    <p>That was <span id="days-ago">0</span> days ago.</p>
+    <p>That was <span id="seconds-ago">0</span> seconds ago.</p>
+
+    <script>
+        let lastVisitDate;
+        const now = Date.now();
+
+        if (window.localStorage.getItem('last-visit-date'))
+        {
+            lastVisitDate = window.localStorage.getItem('last-visit-date');
+        }
+        else {
+            lastVisitDate = now;
+        }
+        window.localStorage.setItem('last-visit-date', now);
+
+        const secondsSinceLastVisit = (now - lastVisitDate)/1000;
+        console.log(secondsSinceLastVisit)
+
+
+    </script>
+</body>
+</html>

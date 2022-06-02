@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: grey;
+            -ms-overflow-style: none; /*hide scrollbar in IE, Edge and Firefox*/
+	        scrollbar-width: none;
+        }
+        ::-webkit-scrollbar{
+	    display: none;
+	    /*hide scrollbar in Chrome, Safari, and Opera*/
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 1rem;
+
+        }
+        .gallery img{
+            max-width: 100%;
+            height: auto;
+            filter: grayscale();
+            transition: filter 0.4s ease-in-out;
+
+        }
+        .gallery-item{
+            border: 4px solid black;
+        }
+        .gallery-label{
+            color: whitesmoke;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: black;
+            text-align: center;
+            padding: 1rem;
+        }
+        .gallery img:hover{
+            filter: none;
+        }
+        .gallery-item:hover{
+            box-shadow: 10px 10px 20px #555;
+        }
+        @media screen and (min-width: 56rem) {
+            .gallery{
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-evenly;
+            }
+        }
+        @media screen and (min-width: 90rem) {
+            .gallery{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        @media (hover: none){
+            .gallery img{
+                filter: none;
+            }
+        }
+    </style>
+</head>
+<style>
+    img{
+        max-width: 100%;
+    }
+</style>
+<body>
+    <header>
+        <h1>Gallery Demo</h1>
+    </header>
+    <main>
+        <h2>Image Gallery</h2>
+        <article class="gallery">
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=0" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=1" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=2" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=3" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=4" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=5" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=6" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=7" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=8" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=9" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=10" width="400" height="300" alt="random"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+            <article class="gallery-item">
+                <picture><img src="https://picsum.photos/400/300?random=11" width="400" height="300" alt="random" loading="lazy"></picture>
+                <div class="gallery-label">Random Picture</div>
+            </article>
+        </article>
+    </main>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+    <script>
+        const imgOptions = {
+            threshold: 1,
+            rootMargin: "0px 0px -10px 0px"$
+        }
+        if ('IntersectionObserver' in window){
+            const observer = new IntersectionObserver((item))
+            items.forEach((item) =>{
+                if(item.IsIntersecting) {
+                    loadImages(item.target);
+                    observer.unobserve(item.target);
+                }
+            });
+            }, imgOptions);
+            imagesToLoad.forEach((img loading="lazy") =>{
+                observer.observe(img);
+            });
+            else{
+
+            }
+            }
+
+        }
+    </script>
+</body>
+</html>
