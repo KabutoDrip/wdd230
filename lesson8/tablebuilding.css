@@ -1,0 +1,49 @@
+*{
+    font-family: Ubuntu, sans-serif;
+}
+:root {
+	--back: #DB9D47;
+    --back2: #FF784F;
+    --foredark: #3A3042;
+	--forelight: #EDFFD9;
+	--border: #3A3042;
+	--borderlight: #FFE19C;
+	--shadow: #FFE19C;
+	--zebra: #EDFFD9;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 30px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
+}
+
+tr:first-child th {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
