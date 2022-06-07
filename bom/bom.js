@@ -3,7 +3,7 @@ var button
 var list
 
 function appendList() {
-	var input = document.getElementById("favchap");
+	var input = document.getElementById("favchap").value;
 
 	var ul = document.getElementById("list");
 	var li = document.createElement("li");
