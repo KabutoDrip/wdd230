@@ -12,7 +12,7 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=Rexburg&appid=2a862fd17
     city.innerHTML = nameValue;
     temperature.innerHTML = "Temperaure: " + tempValue;
     wspeed.innerHTML = "Wind Speed: " +  wspeedValue;
-    if (tempValue >= 50 && wspeedValue >= 3){
+    if (tempValue <= 50 && wspeedValue >= 3){
       windchill.innerHTML = "Wind Chill: " + wchillValue;
     }
     else{
