@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="stylesheet" href="css/discover.css">
+    <style>
+        *{box-sizing: border-box; }
+        form label, form input{ display: block; width: 100%;}
+        form{max-width: 320px; margin: 0 auto; border: 1px solid #ccc; padding: 1em;}
+        form input{margin-bottom: 1em; padding: .75em;}
+        form label input{
+           display: inline;
+           width: auto;
+           justify-content: space-around;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="Shire of Commerce Logo">
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+                <form method="get" action="thankyou.html">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" autofocus required>
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" required>
+
+                    <label for="major">Title:</label>
+                    <input type="text" name="title" id="title" pattern="[A-Za-z\-]^[\p{L}]${1,25}{7,100}" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" placeholder="abc1@yahoo.com">
+
+                    <label for="phone">Phone #:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="555-555-5555">
+
+                    <label for="buisness">Buisness:</label>
+                    <input type="text" name="buisness" id="buisness">
+ 
+                    <label >NP Membership(non-profit)<input type="radio" name="status" value="np"></label>
+                    <label >Bronze Membership<input type="radio" name="status" value="bronze"></label>
+                    <label >Silver Membership<input type="radio" name="status" value="silver"></label>
+                    <label >Gold Membership<input type="radio" name="status" value="gold"></label>
+                    
+                    <label> Description<textarea name="description" id="description" cols="30" rows="10" placeholder="describe your buisness"></textarea></label>                   
+                    <input type="submit" value="Sign Up">
+
+                </form>
+    </main>
+    <footer>
+        <div class="copyright">&copy;<span id="year"></span></div>
+        <div class="name">Camden Miller</div>
+        <img src="images/logo.svg" alt="logo">
+        <div class="state">Idaho</div>
+        <div class="lastmodified"><span id="lastmod"></span></div> 
+       </footer>
+</body>
+</html>
