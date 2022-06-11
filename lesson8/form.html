@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormDemo</title>
+
+    <style>
+        *{box-sizing: border-box; }
+        form label, form input{ display: block; width: 100%;}
+        form{max-width: 320px; margin: 0 auto; border: 1px solid #ccc; padding: 1em;}
+       form input{margin-bottom: 1em; padding: .75em;}
+       form label input{
+           display: inline;
+           width: auto;
+           justify-content: space-around;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Form Demo</h1>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+        <form method="get" action="thankyou.html">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" autofocus required>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" required>
+            <label for="major">Major:</label>
+            <input type="text" name="major" id="major" pattern="Accounting|CS|WDD|SWE" required>
+            <label for="color">Color:</label>
+            <input list="color-list" name="color" id="color">
+            <input type="submit" value="Sign Up">
+            <datalist id="color-list">
+                <option value="Red">
+                <option value="Yellow">
+                <option value="Green">
+                <option value="Blue">
+            </datalist> 
+            <label >Freshman<input type="radio" name="status" value="freshman"></label>
+            <label >Sophmore<input type="radio" name="status" value="sophmore"></label>
+            <label >Junior<input type="radio" name="status" value="junior"></label>
+            <label >Senior<input type="radio" name="status" value="senior"></label>
+            <label for="phone">Phone #:</label>
+            <input type="tel" name="phone" id="phone" placeholder="555-555-5555">
+
+        </form>
+    </footer>
+</body>
+</html>

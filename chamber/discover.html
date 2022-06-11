@@ -5,156 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover</title>
-
-    <style>
-        *{
-            box-sizing: border-box;
-            background-color: #DADADA;
-            -ms-overflow-style: none; /*hide scrollbar in IE, Edge and Firefox*/
-	        scrollbar-width: none;
-        }
-        ::-webkit-scrollbar{
-	    display: none;
-	    /*hide scrollbar in Chrome, Safari, and Opera*/
-        }
-header {
-	background-color: #DADADA;
-	display: flex;
-    text-align: center;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 900px;
-	margin: 0 auto;
-	border-bottom: 1px solid #bbb;
-    font-size: 1.5em;
-}
-
-.logo {
-	width: 150px;
-	height: auto;
-    margin-left: 20px;
-    object-fit: cover;
-}
-nav {
-	margin: 0 auto;
-	max-width: 760px;
-}
-.navigation {
-	list-style: none;
-	padding: 0;
-	
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-
-
-
-.navigation a:hover {
-	color: white;
-	background-color: black;
-}
-
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-.responsive li {
-	display: block;
-}
-section{
-	border-style: double;
-	border: 1em;
-	border: black;
-}
-
-/* Media Query for medium+ views */
-@media only screen and (min-width: 50em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-}
-        .gallery{
-            display: grid;
-            grid-template-columns: 1fr;
-            justify-items: center;
-            gap: 1rem;
-
-        }
-        .gallery img{
-            max-width: 100%;
-            height: auto;
-            filter: grayscale(100);
-            transition: filter 0.4s ease-in-out;
-
-        }
-        .gallery-item{
-            border: 4px solid black;
-        }
-        .gallery-label{
-            color: whitesmoke;
-            font-family: 'Trebuchet MS', sans-serif;
-            background-color: black;
-            text-align: center;
-            padding: 1rem;
-        }
-        .gallery img:hover{
-            filter: none;
-        }
-        .gallery-item:hover{
-            box-shadow: 10px 10px 20px #555;
-        }
-        footer{
-        display: flex;
-        justify-content: space-between;
-        bottom: 0px;
-        background-color: #DADADA;
-        width: 100vw;
-        margin: 0;
-        font-size: 1.5em;
-        height: 5vh;
-        right: 0;
-        left: 0;
-        }
-        @media screen and (min-width: 56rem) {
-            .gallery{
-                grid-template-columns: 1fr 1fr;
-                justify-content: space-evenly;
-            }
-        }
-        @media screen and (min-width: 90rem) {
-            .gallery{
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        @media (hover: none){
-            .gallery img{
-                filter: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/discover.css">
+    
 </head>
 
 <body>
@@ -163,8 +15,8 @@ section{
         <nav>
             <ul class="navigation">
                 <li><a class="ham" href="#">Menu</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Feedback</a></li>
@@ -174,57 +26,55 @@ section{
         </nav>
     </header>
     <main>
-        <h2>Image Gallery</h2>
+        <h2>Discover</h2>
         <article class="gallery">
             <article class="gallery-item">
-                <picture><img data-src="https://picsum.photos/400/300?random=0" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
+                <picture><img src="http://placehold.jp/300x400.png" data-src="images/meadowmeats.webp" width="600" alt="random"></picture>
+                <div class="gallery-label">Meadow Meats</div>
+                <h2>Seasonal Rashers of Bacon Avaliable Now!</h2>
+                <p>Fresh fish, rabbit, and pork avaliable at all times</p>
             </article>
             <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=1" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
+                <picture><img src="http://placehold.jp/300x400.png" data-src="images/jewelry.webp" width="600" alt="random"></picture>
+                <div class="gallery-label">Shire Jewelry</div>
+                <h2>New Gemstones From Mines of Moria Now Avaliable!</h2>
+                <p>Rare oversided emerald on display and avaliable for purchase</p>
             </article>
             <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=2" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
+                <picture><img src="http://placehold.jp/300x400.png" data-src="images/fireworks.webp" width="600" alt="random"></picture>
+                <div class="gallery-label">Fogies Fireworks</div>
+                <h2>Firework Demonstration Party This Friday!</h2>
+                <p>We offer a wide selection of fireworks to fit your partying needs</p>
             </article>
             <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=3" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
+                <picture><img src="http://placehold.jp/300x400.png" data-src="images/party.webp" width="600" alt="random"></picture>
+                <div class="gallery-label">Shire Population</div>
+                <h2>The Shire is home !to 23,457 happy hobbits</h2>
+                <p>To apply for shire residency, click here</p>
             </article>
             <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=4" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
+                <picture><img src="http://placehold.jp/300x400.png" data-src="images/rainy.webp" width="600" alt="random"></picture>
+                <div class="gallery-label">It is Currently Rainy Season</div>
             </article>
             <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=5" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
+                <picture><img src="http://placehold.jp/300x400.png" data-src="images/shire.webp" width="600" alt="random"></picture>
+                <div class="gallery-label">Avaliable Housing</div>
+                <h2>Prime Real-estate Avaliable Near 4th Hill</h2>
+                <p>More houses avaliable, click for more info</p>
             </article>
             <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=6" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
+                <picture><img src="http://placehold.jp/300x400.png" data-src="images/herb.webp" width="600" alt="random"></picture>
+                <div class="gallery-label">Hals Herbs and Spices</div>
+                <h2>Fresh-grown Herbs to Spice up Your Life</h2>
             </article>
             <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=7" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
+                <picture><img src="http://placehold.jp/300x400.png" data-src="images/dinner.webp" width="600" alt="random"></picture>
+                <div class="gallery-label">Bilbos Diner</div>
+                <h2>No Reservation Needed!</h2>
+                <p>Fish, Pork, Potatoes, Wine, and Bread avaliable year round, ask about our seasonal items</p>
             </article>
-            <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=8" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
-            </article>
-            <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=9" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
-            </article>
-            <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=10" width="400" height="300" alt="random"></picture>
-                <div class="gallery-label">Random Picture</div>
-            </article>
-            <article class="gallery-item">
-                <picture><img src="https://picsum.photos/400/300?random=11" width="400" height="300" alt="random" loading="lazy"></picture>
-                <div class="gallery-label">Random Picture</div>
-            </article>
-        </article>
+
+           
     </main>
     <footer>
         <div class="copyright">&copy;<span id="year"></span></div>
@@ -234,5 +84,6 @@ section{
         <div class="lastmodified"><span id="lastmod"></span></div> 
        </footer>
     <script src="js/script.js"></script>
+    <script src="js/lazyloading.js"></script>
 </body>
-</html>
+</html

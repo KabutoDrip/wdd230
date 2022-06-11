@@ -1,0 +1,153 @@
+        *{
+            box-sizing: border-box;
+            background-color: #DADADA;
+            -ms-overflow-style: none; /*hide scrollbar in IE, Edge and Firefox*/
+	        scrollbar-width: none;
+        }
+        ::-webkit-scrollbar{
+	    display: none;
+	    /*hide scrollbar in Chrome, Safari, and Opera*/
+        }
+header {
+	background-color: #DADADA;
+	display: flex;
+    text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 900px;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+    font-size: 1.5em;
+}
+h2{
+    text-align: center;
+}
+
+.logo {
+	width: 150px;
+	height: auto;
+    margin-left: 20px;
+    object-fit: cover;
+}
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+	
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+
+
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+section{
+	border-style: double;
+	border: 1em;
+	border: black;
+}
+
+article p{
+    text-align: center;
+}
+/* Media Query for medium+ views */
+@media only screen and (min-width: 50em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+        .gallery{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 1rem;
+
+        }
+        .gallery img{
+            max-width: 100%;
+            height: auto;
+            filter: grayscale(100);
+            transition: filter 0.4s ease-in-out;
+
+        }
+        .gallery-item{
+            border: 4px solid black;
+        }
+        .gallery-label{
+            color: whitesmoke;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: black;
+            text-align: center;
+            padding: 1rem;
+        }
+        .gallery img:hover{
+            filter: none;
+        }
+        .gallery-item:hover{
+            box-shadow: 10px 10px 20px #555;
+        }
+        footer{
+        display: flex;
+        justify-content: space-between;
+        bottom: 0px;
+        background-color: #DADADA;
+        width: 100vw;
+        margin: 0;
+        font-size: 1.5em;
+        height: 5vh;
+        right: 0;
+        left: 0;
+        }
+        @media screen and (min-width: 56rem) {
+            .gallery{
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-evenly;
+            }
+        }
+        @media screen and (min-width: 90rem) {
+            .gallery{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        @media (hover: none){
+            .gallery img{
+                filter: none;
+            }
+        }
