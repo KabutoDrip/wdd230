@@ -13,7 +13,6 @@ function appendList() {
 	ul.appendChild(li);
 	button.addEventListener("click", function (){
 		li.parentNode.removeChild(li);
-
 	})
 
 }
