@@ -62,6 +62,7 @@
                     <label> Description<textarea name="description" id="description" cols="30" rows="10" placeholder="describe your buisness"></textarea></label>                   
                     <input type="submit" value="Sign Up">
 
+                    <input type="hidden" name="visit-date" id="visit-date" value="0">
                 </form>
     </main>
     <footer>
@@ -71,5 +72,10 @@
         <div class="state">Idaho</div>
         <div class="lastmodified"><span id="lastmod"></span></div> 
        </footer>
+
+       <script>
+            let now = Date.now()
+            document.querySelector("#visit-date").value = now
+       </script>
 </body>
 </html>
