@@ -73,7 +73,9 @@ section{
 	border: 1em;
 	border: black;
 }
-
+h3{
+    display: none;
+}
 article p{
     text-align: center;
 }
