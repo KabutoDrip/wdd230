@@ -14,6 +14,7 @@ fetch(requestURL)
     console.table(jsonObject);
     
     prophets.forEach(displayProphets);
+    const prophets = jsonObject['prophets'];
 
   });
 

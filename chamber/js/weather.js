@@ -19,3 +19,8 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=Rexburg&appid=2a862fd17
       windchill.innerHTML = "Wind Chill: None" 
     }
   })
+  var iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  var desc = data.weather[0].description;
+
+  weatherIcon.setAttribute('src', iconsrc);weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = desc;
