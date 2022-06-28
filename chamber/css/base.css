@@ -120,9 +120,9 @@ section{
 .weat {grid-row: 1;grid-column: 1/7;}
 .wicon {grid-row: 2/4;grid-column: 2/5;}
 .temperature {grid-row: 2;grid-column: 1/2;}
-.chill {grid-row: 3;grid-column: 1/2;}
-.fig {grid-row: 4;grid-column: 2/5;}
-.wspeed{display: none;}
+.chill {grid-row: 4;grid-column: 1/2;}
+.fig {grid-row: 5;grid-column: 2/5;}
+.wspeed{grid-row: 3;}
 
 /* Media Query for medium+ views */
 @media only screen and (min-width: 50em) {
