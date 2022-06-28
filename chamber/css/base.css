@@ -233,7 +233,7 @@ left: 0;
 	grid-column: 1/1;
 }
 
-section img{ 
+section img:not(.wicon){ 
 	height: 50%;
 	max-width: 100%;
 	object-fit: cover;
@@ -243,6 +243,10 @@ section img{
 	margin-right: auto;
 	
 }		
+.wicon{
+	padding: 0;
+	margin: 0;
+}
 .hero img{
 	height: 100%;
 }
