@@ -110,6 +110,19 @@ section{
 	border: 1em;
 	border: black;
 }
+.weather{
+	display: grid;
+	grid-template-columns: repeat(1fr,1fr,1fr,1fr,1fr,1fr,1fr);
+	grid-template-rows: repeat(1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+.weat {grid-row: 1;}
+.city {grid-row: 2;}
+.wicon {grid-row: 3/5;}
+.temperature {grid-row: 6;}
+.chill {grid-row: 7;}
+figcaption {grid-row: 8;}
 
 /* Media Query for medium+ views */
 @media only screen and (min-width: 50em) {
