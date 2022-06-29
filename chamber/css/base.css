@@ -112,8 +112,8 @@ section{
 }
 .weather{
 	display: grid;
-	grid-template-columns: 1fr,1fr,1fr,1fr,1fr,1fr,1fr;
-	grid-template-rows: 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 }
@@ -189,6 +189,9 @@ left: 0;
 		justify-content: space-evenly;
 		
 	}
+	section{
+		max-width: 50vw;
+	}
 }
 @media screen and (min-width: 90rem) {
 	.gallery{
@@ -226,6 +229,10 @@ left: 0;
 .join{
 	grid-row: 3;
 	grid-column: 1/1;
+}
+#joinhead{
+	text-align: center;
+	padding-top: 1em;
 }
 .event{
 	grid-row: 4;
@@ -277,6 +284,10 @@ footer{
     right: 0;
     left: 0;
 }
+#welcome,#thanks{
+text-align: center;
+}
+
 /* Larger viewports */
 @media screen and (min-width: 600px) {
 	header{
