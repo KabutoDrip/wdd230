@@ -129,7 +129,7 @@ section{
 .wspeed{grid-row: 3;}
 
 /* Media Query for medium+ views */
-@media only screen and (min-width: 61em) {
+@media only screen and (min-width: 52em) {
 	.navigation {
 		display: flex;
 	}
