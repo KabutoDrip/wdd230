@@ -11,6 +11,18 @@
 	box-sizing: border-box;
 
 }
+#map{
+	max-width: 100%;
+}
+#contactpageinfo{
+	text-align: center;
+	font-size: 1.5em;
+}
+#contactpageinfo h1{
+	text-align: center;
+	font-size: 2.5em;
+	text-decoration: underline;
+}
 header img{
 	max-width: 2em;
 	padding: 10px;
@@ -175,6 +187,7 @@ section{
 .gallery-item:hover{
 	box-shadow: 10px 10px 20px #555;
 }
+
 footer{
 display: flex;
 justify-content: space-between;

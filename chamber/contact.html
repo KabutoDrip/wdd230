@@ -5,16 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo&family=Libre+Bodoni:ital@1&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
     <header>
-
+        <img class="logo" src="images/logo.svg" alt="Shire of Commerce Logo">
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <article id="contactpageinfo">
+        <h1>Contact Information:</h1>
+        <h3>Email: shirecomadmin@gmail.com</h3>
+        <h3>Phone: 16-980-7613</h3>
+        <h3>Address: 7062 Adventure dr, Hobbiton</h3>
+        <img src="images/map.webp" alt="Map of the shire" id="map" >
+        </article>
+        <form method="get" action="thankyou.html">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" autofocus required>
+
+            <label for="phone">Phone #:</label>
+            <input type="tel" name="phone" id="phone" placeholder="555-555-5555">
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" pattern="[A-Za-z\-]{7,}" placeholder="abc1@yahoo.com">
+            
+            <label> Buisness Description <textarea name="description" id="description" cols="30" rows="1" placeholder="describe your buisness"></textarea></label>                   
+
+            <input type="submit" value="Sign Up">
 
     </main>
     <footer>
-        
+        <div class="copyright">&copy;<span id="year"></span></div>
+        <div class="name">Camden Miller</div>
+        <img src="images/logo.svg" alt="logo">
+        <div class="state">Idaho</div>
+        <div class="lastmodified"><span id="lastmod"></span></div> 
     </footer>
 </body>
 </html>
