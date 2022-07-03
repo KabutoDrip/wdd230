@@ -11,6 +11,10 @@
 	box-sizing: border-box;
 
 }
+header img{
+	max-width: 2em;
+	padding: 10px;
+}
 section button{
 	z-index: +99;
 	background-color: white;
@@ -36,7 +40,7 @@ header {
 	border-bottom: 1px solid #bbb;
     font-size: 1.5em;
 }
-
+header
 .logo {
 	width: 150px;
 	height: auto;
@@ -125,7 +129,7 @@ section{
 .wspeed{grid-row: 3;}
 
 /* Media Query for medium+ views */
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 61em) {
 	.navigation {
 		display: flex;
 	}
