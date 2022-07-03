@@ -31,8 +31,6 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="#">Feedback</a></li>
-                <li><a href="#">History</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -55,16 +53,22 @@
                     <label for="phone">Phone #:</label>
                     <input type="tel" name="phone" id="phone" placeholder="555-555-5555">
 
-                    <label for="buisness">Buisness:</label>
+                    <label for="buisness">Buisness Name:</label>
                     <input type="text" name="buisness" id="buisness">
+
+                    <label for="buisness">Buisness Address:</label>
+                    <input type="text" name="buisness" id="buisness">
+
+                    <label> Buisness Description<textarea name="description" id="description" cols="30" rows="10" placeholder="describe your buisness"></textarea></label>                   
  
-                    <label >NP Membership(non-profit)<input type="radio" name="status" value="np"></label>
-                    <label >Bronze Membership<input type="radio" name="status" value="bronze"></label>
-                    <label >Silver Membership<input type="radio" name="status" value="silver"></label>
-                    <label >Gold Membership<input type="radio" name="status" value="gold"></label>
+                    <label >NP Membership - $100 (non-profit) <input type="radio" name="status" value="np"></label>
+                    <label >Bronze Membership - $200 <input type="radio" name="status" value="bronze"></label>
+                    <label >Silver Membership - $400 <input type="radio" name="status" value="silver"></label>
+                    <label >Gold Membership - $1000 <input type="radio" name="status" value="gold"></label>
                     
-                    <label> Description<textarea name="description" id="description" cols="30" rows="10" placeholder="describe your buisness"></textarea></label>                   
                     <input type="submit" value="Sign Up">
+
+                    
 
                     <input type="hidden" name="visit-date" id="visit-date" value="0">
                     <script> 
