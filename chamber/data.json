@@ -1,86 +1,71 @@
 {
-    "FogiesFW-members":[
-        {"name":"Milly Cook","age":"72","membership-level":"Gold"},
-        {"name":"Anastasia Durham","age":"39","membership-level":"Bronze"},
-        {"name":"Rocco Wade","age":"42","membership-level":"NP"},
-        {"name":"Sabrina Gonzales","age":"84","membership-level":"Bronze"},
-        {"name":"Ricky Briggs","age":"76","membership-level":"NP"},
-        {"name":"Calvin Crawford","age":"32","membership-level":"Bronze"}
-    ],
-    "MeadowMeats-members":[
-        {"name":"Joel Reed","age":"46","membership-level":"Silver"},
-        {"name":"Bernard Carillo","age":"30","membership-level":"Bronze"},
-        {"name":"Cleo Carlson","age":"51","membership-level":"Silver"},
-        {"name":"Leighton McConnell","age":"34","membership-level":"Bronze"},
-        {"name":"Ryan Larsen","age":"20","membership-level":"Silver"},
-        {"name":"Felix Mendez","age":"62","membership-level":"Bronze"},
-        {"name":"Holly Wilson","age":"34","membership-level":"Gold"} 
-    ],
-    "ShireJewel-members":[
-        {"name":"Roman Boyle","age":"36","membership-level":"Bronze"},
-        {"name":"Evangeline Blake","age":"78","membership-level":"Silver"},
-        {"name":"Jacob Silva","age":"41","membership-level":"Bronze"},
-        {"name":"Elle Tate","age":"18","membership-level":"Gold"},
-        {"name":"Jerry Parrish","age":"52","membership-level":"Gold"},
-        {"name":"Hannah Arroyo","age":"27","membership-level":"Bronze"}
+    "FogiesFW": [
+        {
+        "contact": "fogiesfw@gmail.com",
+        "founded": "1789",
+        "description": "lorem"
+        }
+    ]
+
+    ,
+    "MeadowMeats":[
+        {
+        "contact": "mshiremeats@yahoo.com",
+        "founded": "1698",
+        "description": "lorem"
+        }
+    ]
+
+    ,
+    "ShireJewel":[
+        {
+        "contact": "hobbitonkarat12@gmail.com",
+        "founded": "1789",
+        "description": "lorem"
+        }
     ],
     "Tavern":[
-        {"name":"Billy Miranda","age":"36","membership-level":"Bronze"},
-        {"name":"Philip O'Reilly","age":"71","membership-level":"Bronze"},
-        {"name":"Hugo Fernandez","age":"56","membership-level":"Bronze"},
-        {"name":"Monica Baird","age":"50","membership-level":"Silver"},
-        {"name":"Zahra Hodges","age":"58","membership-level":"Silver"},
-        {"name":"Tom Mullen","age":"23","membership-level":"Bronze"},
-        {"name":"Sienna Campbell","age":"64","membership-level":"Silver"},
-        {"name":"Maximmallian Mendez","age":"37","membership-level":"Bronze"},
-        {"name":"Kian Roberson","age":"50","membership-level":"Gold"}
+        {
+        "contact": "alehall@outlook.com",
+        "founded": "1700",
+        "description": "lorem"
+        }
     ],
-    "InnitstradInn-members":[
-        {"name":"Charlotte Newton","age":"62","membership-level":"Bronze"},
-        {"name":"Cleo Zuniga","age":"52","membership-level":"Gold"},
-        {"name":"Shane Deleon","age":"19","membership-level":"NP"},
-        {"name":"Fern Alvarado","age":"54","membership-level":"NP"},
-        {"name":"Tilly Mccormick","age":"70","membership-level":"NP"},
-        {"name":"Eliza Lin","age":"32","membership-level":"Bronze"},
-        {"name":"Hashim Cannon","age":"56","membership-level":"Silver"},
-        {"name":"Isaac Schmidt","age":"66","membership-level":"Silver"},
-        {"name":"Rosie Sanders","age":"59","membership-level":"Silver"},
-        {"name":"Nathan Small","age":"64","membership-level":"Gold"}
+    "InnitstradInn":[
+        {
+        "contact": "iinn@gmail.com",
+        "founded": "1710",
+        "description": "lorem"
+        }
     ],
-    "Blacksmith-members":[
-        {"name":"Kye Odom","age":"63","membership-level":"Bronze"},
-        {"name":"Claudia Davis","age":"53","membership-level":"NP"},
-        {"name":"Terry Boyer","age":"67","membership-level":"Gold"}
+    "Blacksmith":[
+        {
+        "contact": "crispymetals@gmail.com",
+        "founded": "1697",
+        "description": "lorem"
+        }
     ],
-    "HalsHerbs-members":[
-        {"name":"Damien Leach","age":"75","membership-level":"Silver"},
-        {"name":"Ronnie Petty","age":"29","membership-level":"Bronze"},
-        {"name":"Ewan Barret","age":"20","membership-level":"NP"},
-        {"name":"Mason Rodgers","age":"34","membership-level":"Gold"},
-        {"name":"Jenson Ayala","age":"29","membership-level":"NP"}
+    "HalsHerbs":[
+        {
+        "contact": "halwholistics@yahoo.com",
+        "founded": "1693",
+        "description": "lorem",
+        "image" : "images/herb.webp"
+        }
     ],
-    "BilbosDiner-members":[
-        {"name":"Tamara Cochran","age":"51","membership-level":"Bronze"},
-        {"name":"Ruben Skinner","age":"20","membership-level":"Bronze"},
-        {"name":"Ismail Dominguez","age":"53","membership-level":"Gold"},
-        {"name":"Katy Manning","age":"46","membership-level":"Silver"},
-        {"name":"Ellen Pearson","age":"19","membership-level":"Bronze"},
-        {"name":"Garfield Cuevas","age":"38","membership-level":"Gold"},
-        {"name":"Hazel Robertson","age":"80","membership-level":"Silver"}
+    "BilbosDiner":[
+        {
+        "contact": "BilbosFabulousFood@gmail.com",
+        "founded": "1721",
+        "description": "lorem"
+        }
     ],
-    "AdventurersGuildmembers":[
-        {"name":"Erica Estrada","age":"22","membership-level":"Silver"},
-        {"name":"Morgan Dennis","age":"26","membership-level":"Bronze"},
-        {"name":"Jose David","age":"68","membership-level":"Gold"},
-        {"name":"Pearl Lawson","age":"80","membership-level":"Bronze"},
-        {"name":"Genevieve Perry","age":"51","membership-level":"Silver"},
-        {"name":"Hannah Shannon","age":"63","membership-level":"Bronze"},
-        {"name":"Leo Wang","age":"32","membership-level":"Gold"},
-        {"name":"Haider Andrews","age":"35","membership-level":"Gold"},
-        {"name":"Caitlyn Walsh","age":"75","membership-level":"Silver"},
-        {"name":"Justin Hayes","age":"43","membership-level":"Bronze"},
-        {"name":"Howard Richmond","age":"58","membership-level":"Silver"},
-        {"name":"Rachel Hayes","age":"63","membership-level":"NP"}
+    "AdventurersGuild":[
+        {
+        "contact": "MEadventurersguild@adventure.com",
+        "founded": "1701",
+        "description": "lorem"
+        }
     ]
 
 
